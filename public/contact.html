@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Khemenu-Rekh Institute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="feature-shell contact-shell">
+      <div class="ambient" aria-hidden="true" id="ambient"></div>
+
+      <header class="feature-topbar">
+        <a class="feature-backlink" href="index.html">home</a>
+      <nav class="social-links" aria-label="quick links">
+          <a class="social-orb" href="classes.html" aria-label="Classes">ðŸ—“ï¸</a>
+          <a class="social-orb" href="health.html" aria-label="Health">âš•ï¸</a>
+          <a class="social-orb" href="divination.html" aria-label="Divination">ðŸ”Ž</a>
+          <a class="social-orb" href="counseling.html" aria-label="Counseling">ðŸ‘¤</a>
+      </nav>
+      </header>
+
+      <main class="feature-main contact-main">
+        <section class="contact-hero">
+          <div class="contact-hero-copy">
+            <p class="feature-kicker">Reach The Institute</p>
+            <h1>Contact</h1>
+            <p class="feature-intro">
+              Reach out with any questions , suggestions , or to simply connect with us. 
+            </p>
+            <div class="feature-actions">
+              <a class="feature-button feature-button-primary" href="#contact-form">Open Contact Form</a>
+              <a class="feature-button" href="index.html">Back to Home</a>
+            </div>
+          </div>
+
+          <div class="contact-hero-art">
+            <div class="contact-figure" aria-hidden="true"></div>
+            <div class="contact-callout">
+              <span class="feature-sigil-label">Best Use</span>
+              <p>General questions, consultation requests, class interest, and next-step conversations.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-grid" aria-label="Contact details and form">
+          <article class="contact-panel contact-panel-info">
+            <!-- <span class="feature-note-index">01</span> -->
+            
+            <h2> Contact Parameters </h2>
+            <!-- <p>
+              Keep a phone number visible here so visitors always have a direct path, even before the form is
+              wired to backend delivery.
+            </p> -->
+            <div class="contact-methods">
+              <!-- <div class="contact-method">
+                <span class="contact-method-label">Phone</span>
+                <p>Add primary phone number here</p>
+              </div> -->
+              <!-- <div class="contact-method">
+                <span class="contact-method-label">Email Routing</span>
+                <p>Form delivery will be connected later through Firebase-backed handling.</p>
+              </div> -->
+              <div class="contact-method">
+                <span class="contact-method-label">Response Window</span>
+                <p> We generally try to answer questions within a 48 hour period. 
+                  Note that we are located in London, England, so time zones may 
+                  affect our response time if you are reaching out from an 
+                  international location.</p>
+              </div>
+              contact info is local to the United Kingdom : 
+               <img src="images/cInfo.jpg" class="responsive-image" alt="Contact information" />
+            </div>
+          </article>
+
+          <article class="contact-panel contact-panel-form" id="contact-form">
+            <!-- <span class="feature-note-index">02</span> -->
+            <h2>Send A Message</h2>
+            <p class="contact-form-intro">
+               <!-- Email us -->
+            </p>
+            <form class="contact-form" id="contact-form-element" novalidate>
+              <label class="contact-field">
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+
+              <label class="contact-field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="your@email.com" required />
+              </label>
+
+              <label class="contact-field">
+                <span>Phone</span>
+                <input type="tel" name="phone" placeholder="+44 7XXX XXXXXX" />
+              </label>
+
+              <label class="contact-field contact-field-full">
+                <span>Message</span>
+                <textarea name="message" rows="6" placeholder="How can we help you?" required></textarea>
+              </label>
+
+              <div class="contact-form-actions">
+                <button class="contact-submit" id="contact-submit" type="submit">Send Message</button>
+                <p class="contact-form-note" id="contact-form-note">Messages are sent securely through the site contact service.</p>
+              </div>
+            </form>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-main">
+          <div class="footer-credit">
+            <img class="footer-credit-logo" src="images/mbLogo.png" alt="MediaBreeze Multimedia logo" />
+            <p class="footer-credit-text">
+              &copy; 2026 web development by <a href="https://www.mediabreeze.com">MediaBreeze Multimedia</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-edge"></div>
+      </footer>
+    </div>
+
+    <script>
+      const ambient = document.getElementById("ambient");
+      const particleCount = 18;
+
+      for (let index = 0; index < particleCount; index += 1) {
+        const dust = document.createElement("span");
+        const size = 3 + Math.random() * 6;
+        const left = Math.random() * 100;
+        const duration = 11 + Math.random() * 12;
+        const delay = Math.random() * -18;
+        const drift = `${-36 + Math.random() * 72}px`;
+
+        dust.className = "dust";
+        dust.style.left = `${left}%`;
+        dust.style.width = `${size}px`;
+        dust.style.height = `${size}px`;
+        dust.style.animationDuration = `${duration}s`;
+        dust.style.animationDelay = `${delay}s`;
+        dust.style.setProperty("--drift-x", drift);
+        ambient.appendChild(dust);
+      }
+    </script>
+    <script src="contact.js"></script>
+    <script src="video-autoplay.js"></script>
+</body>
+</html>

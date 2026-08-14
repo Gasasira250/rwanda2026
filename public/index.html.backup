@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khemenu-Rekh Institute</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="page-shell">
+    <div class="ambient" aria-hidden="true" id="ambient"></div>
+
+<header class="topbar">
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="nuShuRa.html">Nu Shu Ra</a>
+    <a href="classes.html">Lectures &amp; Workshops</a>
+    <a href="divination.html">Divination</a>
+    <a href="spiritual-technologies.html">Spiritual Technologies</a>
+    <a href="khamitic-therapeutics.html">Khamitic Therapeutics</a>
+    <a href="#">Meet the Team</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+   <section class="title-band" aria-label="Site title">
+  <div class="brand-header">
+    <!-- Final Khemenu logo will be placed here -->
+    <div class="brand-logo-placeholder" aria-hidden="true"></div>
+
+    <h1>Khemenu-Rekh Institute</h1>
+  </div>
+</section>
+
+    <section class="reveal-panel" aria-hidden="true"></section>
+
+    <main>
+      <section class="cards" aria-label="Featured paths">
+        <a class="card " href="nuShuRa.html" aria-label="Open Nu Shu Ra feature page">
+          <video class="card-video" autoplay muted loop playsinline preload="auto">
+            <source src="exports/nuShuRa11.mp4" type="video/mp4" />
+          </video>
+          <span class="card-label">Nu Shu Ra</span>
+        </a>
+        <a class="card card-tehuti" href="divination.html" aria-label="Open divination page">
+          <video class="card-video" autoplay muted loop playsinline preload="auto">
+            <source src="exports/divinationLooped2.mp4" type="video/mp4" />
+          </video>
+          <span class="card-label">Spiritual Readings</span>
+        </a>
+        
+        <a class="card card-spiritual-tech" href="spiritual-technologies.html" aria-label="Open spiritual technologies page">
+          <video class="card-video" autoplay muted loop playsinline preload="auto">
+            <source src="exports/spiritualTech2Pan.mp4" type="video/mp4" />
+          </video>
+          <span class="card-label">Spiritual Technologies</span>
+        </a>
+        <!-- second row -->
+         <a class="card card-health" href="health.html" aria-label="Open health page">
+          <span class="card-label">Health</span>
+        </a>
+
+        <a class="card card-counseling" href="counseling.html" aria-label="Open counseling page">
+          <span class="card-label">Counseling</span>
+        </a>
+
+      </section>
+
+      
+      <section class="long-panels" aria-label="Institute offerings">
+
+        <a class="long-panel long-panel-link" href="nuShuRa.html" aria-label="Open Nu Shu Ra page">
+          
+        <a class="long-panel long-panel-link" href="khamitic-therapeutics.html" aria-label="Open Khamitic Therapeutics page">
+          <div class="panel-orb panel-botanicals" aria-hidden="true"></div>
+          <div class="panel-copy">
+            <h2 class="gold-glow">Khamitic Therapeutics</h2>
+            <p>
+               <ul>
+                <li>Psycho-spiritual therapy / counseling</li>
+                <li>Nutritional therapy </li>
+                <li>Homeopathy</li>
+                <li>Traditional Chinese Medicine</li>
+                <li>Homeobotanical herbs</li>
+                <li>Holistic & Natural Birthing program</li>
+                <li>Herbology</li>
+               </ul>
+            </p>
+          </div>
+        </a>
+
+        <a class="long-panel long-panel-link" href="counseling.html" aria-label="Open counseling page">
+          <div class="panel-orb panel-counseling" aria-hidden="true"></div>
+          <div class="panel-copy">
+            <h2 class="gold-glow">Psycho-Spiritual Counseling</h2>
+            <p>
+              Receive Afrikan-centered guidance for emotional clarity, spiritual realignment, and life transition.
+              These sessions are designed to help restore inner balance, strengthen self-understanding, and move
+              forward with steadiness, dignity, and purpose.
+            </p>
+          </div>
+        </a>
+
+        <a class="long-panel long-panel-link" href="health.html" aria-label="Open health consultations page">
+          <div class="panel-orb panel-health" aria-hidden="true"></div>
+          <div class="panel-copy">
+            <h2 class="gold-glow">Health Consultations</h2>
+            <p>
+              Explore holistic health support rooted in natural care, preventive wisdom, and whole-person wellness.
+              Consultations focus on practical steps that help align body, mind, and spirit toward stronger long-term health.
+            </p>
+          </div>
+        </a>
+
+        <a class="long-panel long-panel-link" href="divination.html" aria-label="Open divination page">
+          <div class="panel-orb panel-readings" aria-hidden="true"></div>
+          <div class="panel-copy">
+            <h2 class="gold-glow">Oracle Readings </h2>
+            <p>
+              Divination is a process through which a trained practitioner 
+              can bypass the chatter of the human mind to acceess the deeper 
+              well of wisdom located deep within our spirits. We all have a 
+              divine wisdom faculty within us, but that faculty is dormant and usually 
+              dwarfed by the mountain of prejudices and human / animal instincts within our 
+              spirits that embody the hustle and bustle of every day life.
+             </p>
+             <hr>
+             <p>
+              Our divination sessions are performed by master diviner Khem Men Sih Nana Okraku II 
+              with decades of expererience doing oracle readings for himself
+              and others. The insight gained from expert divination 
+              is phenomenal and life-changing. Click here to book a consultation today. 
+             </p>
+          </div>
+        </a>
+
+        
+
+         <a class="long-panel long-panel-link" href="spiritual-technologies.html" aria-label="Open Spiritual Technologies page">
+          <div class="panel-orb panel-solstice" aria-hidden="true"></div>
+          <div class="panel-copy">
+            <h2 class="gold-glow">Spiritual Technologies</h2>
+            <p>
+               <ul>
+                  <li>Solstice Rituals</li>
+                  <li>Rituals</li>
+                  <li>New Moon / Full Moon meditations</li>
+                  <li>Equinox rituals</li>
+                  <li>Elemental rituals</li>
+               </ul>
+            </p>
+          </div>
+        </a>
+
+  
+
+        <!-- <article class="long-panel">
+          <div class="panel-orb panel-community" aria-hidden="true"></div>
+          <div class="panel-copy">
+            <h2>Students And Community</h2>
+            <p>
+              A final long panel can hold community-facing information, mentoring, gatherings, or institute news,
+              while preserving the same visual language across the full stack of sections.
+            </p>
+          </div>
+        </article> -->
+      </section>
+      <div class="content-spacer" aria-hidden="true"></div>
+    </main>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer-credit">
+          <img class="footer-credit-logo" src="images/mbLogo.png" alt="MediaBreeze Multimedia logo" />
+          <p class="footer-credit-text">v 5.19
+            &copy; 2026 web development by <a href="https://www.mediabreeze.com">MediaBreeze Multimedia</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-edge"></div>
+    </footer>
+  </div>
+
+  <script>
+    const ambient = document.getElementById("ambient");
+    const revealPanel = document.querySelector(".reveal-panel");
+    const particleCount = 24;
+    for (let index = 0; index < particleCount; index += 1) {
+      const dust = document.createElement("span");
+      const size = 4 + Math.random() * 8;
+      const left = Math.random() * 100;
+    const duration = 14 + Math.random() * 14;  
+      const delay = Math.random() * -18;
+      const drift = `${-50 + Math.random() * 100}px`;
+
+      dust.className = "dust";
+      dust.style.left = `${left}%`;
+      dust.style.width = `${size}px`;
+      dust.style.height = `${size}px`;
+      dust.style.animationDuration = `${duration}s`;
+      dust.style.animationDelay = `${delay}s`;
+      dust.style.setProperty("--drift-x", drift);
+      ambient.appendChild(dust);
+    }
+
+    if (revealPanel) {
+      const panDuration = 24000;
+
+      const animateRevealPanel = (timestamp) => {
+        const cycleProgress = (timestamp % panDuration) / panDuration;
+        const oscillation = (Math.sin(cycleProgress * Math.PI * 2 - Math.PI / 2) + 1) / 2;
+        const verticalPosition = oscillation * 100;
+
+        revealPanel.style.backgroundPosition = `center center, center center, center ${verticalPosition}%`;
+        window.requestAnimationFrame(animateRevealPanel);
+      };
+
+      window.requestAnimationFrame(animateRevealPanel);
+    }
+  </script>
+    <script src="video-autoplay.js"></script>
+</body>
+</html>
