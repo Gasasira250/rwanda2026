@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -174,7 +174,7 @@
 
         <div class="founder-detail">
           <h3>Role</h3>
-          <p>Founder and Spiritual Director — details coming soon.</p>
+          <p>Founder and Spiritual Director â€” details coming soon.</p>
         </div>
 
         <div class="founder-detail">
@@ -326,9 +326,36 @@
 
   </div>
 
+  <script>
+    const ambient = document.querySelector(".ambient");
+    const particleCount = 18;
+
+    if (ambient) {
+      for (let index = 0; index < particleCount; index += 1) {
+        const dust = document.createElement("span");
+        const size = 3 + Math.random() * 6;
+        const left = Math.random() * 100;
+        const duration = 11 + Math.random() * 12;
+        const delay = Math.random() * -18;
+        const drift = `${-36 + Math.random() * 72}px`;
+
+        dust.className = "dust";
+        dust.style.left = `${left}%`;
+        dust.style.width = `${size}px`;
+        dust.style.height = `${size}px`;
+        dust.style.animationDuration = `${duration}s`;
+        dust.style.animationDelay = `${delay}s`;
+        dust.style.setProperty("--drift-x", drift);
+
+        ambient.appendChild(dust);
+      }
+    }
+  </script>
+
   <script src="video-autoplay.js"></script>
 
 </body>
 </html>
+
 
 

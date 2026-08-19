@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   /* =========================================================
      VIDEO AUTOPLAY
      ========================================================= */
@@ -112,10 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     dot.type = "button";
     dot.className = "carousel-dot";
-    dot.setAttribute(
-      "aria-label",
-      `Go to slide ${index + 1}`
-    );
+    dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
 
     dot.addEventListener("click", () => {
       showSlide(index);
@@ -126,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const dots = dotsContainer.querySelectorAll(".carousel-dot");
 
-  /* Show selected slide */
+  /* Show exactly one slide */
   function showSlide(index) {
     if (index < 0) {
       index = slides.length - 1;
@@ -138,19 +135,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     currentSlide = index;
 
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    slides.forEach((slide, slideIndex) => {
+      const active = slideIndex === currentSlide;
+
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", active ? "false" : "true");
+
+      const video = slide.querySelector("video");
+
+      if (video) {
+        if (active) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      }
+    });
 
     dots.forEach((dot, dotIndex) => {
       dot.classList.toggle(
         "active",
         dotIndex === currentSlide
-      );
-    });
-
-    slides.forEach((slide, slideIndex) => {
-      slide.setAttribute(
-        "aria-hidden",
-        slideIndex === currentSlide ? "false" : "true"
       );
     });
   }
@@ -188,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(currentSlide + 1);
   }, 7000);
 
-  /* Pause automatic rotation while mouse is over carousel */
+  /* Pause while mouse is over carousel */
   carousel.addEventListener("mouseenter", () => {
     clearInterval(carouselTimer);
   });
@@ -199,3 +204,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 7000);
   });
 });
+
+
+
+
+
