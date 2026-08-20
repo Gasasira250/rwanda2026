@@ -3241,3 +3241,31 @@ p {
 '@ | Add-Content .\public\style.css
 
 
+
+/* =========================================================
+   TITLE AREA — COMPACT FINAL POLISH
+   ========================================================= */
+
+.title-band {
+  padding: 6px 20px;
+}
+
+.brand-header {
+  gap: 8px;
+}
+
+.brand-logo-placeholder {
+  width: 48px;
+  height: 48px;
+}
+
+.brand-header h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+.header-book-button {
+  margin-top: 4px;
+  padding: 9px 18px;
+}
+
