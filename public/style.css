@@ -1,4 +1,4 @@
-
+﻿
     @font-face {
       font-family: "Khemenu";
       src: url("fonts/khemenu-font.otf") format("opentype");
@@ -2837,3 +2837,96 @@ select {
   order: 3;
   margin-top: 2px;
 }
+
+
+@'
+
+/* =========================================================
+   HOMEPAGE CAROUSEL — VISUAL POLISH
+   ========================================================= */
+
+.carousel-slide {
+  border-radius: 28px;
+  box-shadow:
+    0 22px 45px rgba(0, 35, 65, 0.30),
+    0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.carousel-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.02)
+  );
+  pointer-events: none;
+}
+
+.carousel-copy {
+  padding: clamp(28px, 4vw, 48px);
+}
+
+.carousel-copy h2 {
+  margin-bottom: 16px;
+  letter-spacing: 0.055em;
+}
+
+.carousel-copy p {
+  max-width: 520px;
+}
+
+.carousel-button {
+  width: 46px;
+  height: 46px;
+  background: rgba(3, 45, 73, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transition:
+    background 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+  background: rgba(3, 45, 73, 0.94);
+  transform: translateY(-50%) scale(1.06);
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.carousel-dots {
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.38);
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.carousel-dot.active {
+  background: #d9b45a;
+  transform: scale(1.35);
+}
+
+@media (max-width: 900px) {
+  .carousel-slide {
+    border-radius: 20px;
+  }
+
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+  }
+}
+'@ | Add-Content .\public\style.css
