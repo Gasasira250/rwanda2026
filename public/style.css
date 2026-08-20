@@ -2930,3 +2930,49 @@ select {
   }
 }
 '@ | Add-Content .\public\style.css
+
+
+@'
+
+/* =========================================================
+   TYPOGRAPHY — VISUAL POLISH
+   ========================================================= */
+
+h1 {
+  line-height: 1.02;
+  letter-spacing: 0.015em;
+}
+
+h2 {
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  margin-bottom: 18px;
+}
+
+h3 {
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 12px;
+}
+
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+p {
+  max-width: 720px;
+}
+
+.feature-intro {
+  max-width: 760px;
+  line-height: 1.7;
+}
+
+'@ | Add-Content .\public\style.css
