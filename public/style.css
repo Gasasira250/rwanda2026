@@ -1,4 +1,4 @@
-ï»¿
+
     @font-face {
       font-family: "Khemenu";
       src: url("fonts/khemenu-font.otf") format("opentype");
@@ -1837,7 +1837,7 @@
 .home-carousel {
   position: relative;
   width: 100%;
-  padding: 34px clamp(20px, 4vw, 44px) 40px;
+  padding: 24px clamp(20px, 4vw, 44px) 34px;
   overflow: hidden;
 }
 
@@ -2842,7 +2842,7 @@ select {
 @'
 
 /* =========================================================
-   HOMEPAGE CAROUSEL â€” VISUAL POLISH
+   HOMEPAGE CAROUSEL — VISUAL POLISH
    ========================================================= */
 
 .carousel-slide {
@@ -2935,7 +2935,7 @@ select {
 @'
 
 /* =========================================================
-   TYPOGRAPHY â€” VISUAL POLISH
+   TYPOGRAPHY — VISUAL POLISH
    ========================================================= */
 
 h1 {
@@ -2980,7 +2980,7 @@ p {
 @'
 
 /* =========================================================
-   HOMEPAGE â€” SECTION SPACING POLISH
+   HOMEPAGE — SECTION SPACING POLISH
    ========================================================= */
 
 .home-carousel {
@@ -3032,7 +3032,7 @@ p {
 @'
 
 /* =========================================================
-   BRAND HEADER â€” POLISHED LOGO MARK
+   BRAND HEADER — POLISHED LOGO MARK
    ========================================================= */
 
 .brand-logo-placeholder {
@@ -3066,7 +3066,7 @@ p {
 @'
 
 /* =========================================================
-   NAVIGATION â€” PREMIUM POLISH
+   NAVIGATION — PREMIUM POLISH
    ========================================================= */
 
 .topbar {
@@ -3111,7 +3111,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL â€” TEXT PANEL POLISH
+   CAROUSEL — TEXT PANEL POLISH
    ========================================================= */
 
 .carousel-copy {
@@ -3163,7 +3163,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL â€” IMAGE PRESENTATION POLISH
+   CAROUSEL — IMAGE PRESENTATION POLISH
    ========================================================= */
 
 .carousel-image {
