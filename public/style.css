@@ -3107,3 +3107,54 @@ p {
 }
 
 '@ | Add-Content .\public\style.css
+
+@'
+
+/* =========================================================
+   CAROUSEL — TEXT PANEL POLISH
+   ========================================================= */
+
+.carousel-copy {
+  position: relative;
+  justify-content: center;
+  padding: clamp(30px, 4vw, 52px);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(13, 95, 159, 0.98),
+      rgba(8, 66, 109, 0.96)
+    );
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.carousel-copy::before {
+  content: "";
+  position: absolute;
+  left: clamp(24px, 3vw, 40px);
+  top: 50%;
+  width: 3px;
+  height: 72px;
+  border-radius: 3px;
+  background: #d9b45a;
+  transform: translateY(-50%);
+  box-shadow: 0 0 14px rgba(217, 180, 90, 0.28);
+}
+
+.carousel-copy h2 {
+  margin: 0 0 16px;
+  padding-left: 22px;
+  color: #ffffff;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  line-height: 1.08;
+  letter-spacing: 0.045em;
+}
+
+.carousel-copy p {
+  max-width: 420px;
+  padding-left: 22px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+'@ | Add-Content .\public\style.css
