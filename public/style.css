@@ -1,4 +1,4 @@
-
+ï»¿
     @font-face {
       font-family: "Khemenu";
       src: url("fonts/khemenu-font.otf") format("opentype");
@@ -1075,37 +1075,72 @@
       gap: 14px;
       margin-top: 26px;
     }
-
     .feature-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 46px;
-      padding: 0 20px;
+      min-height: 50px;
+      padding: 0 24px;
       border-radius: 999px;
-      border: 1px solid rgba(232, 247, 255, 0.45);
-      background: rgba(236, 248, 255, 0.18);
-      color: #eaf7ff;
+      border: 2px solid #d9b45a;
+      background: #0d5f9f;
+      color: #ffffff;
       text-decoration: none;
       font-family: "Khemenu", sans-serif;
-      font-size: 0.82rem;
+      font-size: 0.88rem;
+      font-weight: 700;
       letter-spacing: 0.09em;
       text-transform: uppercase;
-      box-shadow: 0 12px 24px rgba(9, 68, 110, 0.16);
-      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(8, 66, 109, 0.30);
+      cursor: pointer;
+      transition:
+        background 180ms ease,
+        color 180ms ease,
+        transform 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .feature-button:hover,
+    .feature-button:focus-visible {
+      background: #d9b45a;
+      color: #17364d;
+      border-color: #f0d47d;
+      transform: translateY(-2px);
+      box-shadow:
+        0 12px 26px rgba(8, 66, 109, 0.32),
+        0 0 18px rgba(217, 180, 90, 0.45);
+      outline: none;
     }
 
     .feature-button-primary {
-      background: linear-gradient(180deg, #0d5f9f, #08426d);
+      background: #d9b45a;
+      color: #17364d;
+      border-color: #f0d47d;
+      box-shadow:
+        0 10px 24px rgba(155, 116, 35, 0.30),
+        0 0 12px rgba(217, 180, 90, 0.25);
+    }
+
+    .feature-button-primary:hover,
+    .feature-button-primary:focus-visible {
+      background: #f0d47d;
+      color: #102d42;
     }
 
     .feature-button-reserve {
-      font-size: 1.2em;
-      background: linear-gradient(180deg, #44b886, #1e7b63);
-      color: #f3fffb;
+      font-size: 1.05em;
+      background: #d9b45a;
+      color: #17364d;
+      border-color: #f0d47d;
       box-shadow:
-        0 14px 28px rgba(13, 86, 72, 0.22),
-        inset 0 1px 0 rgba(255, 255, 255, 0.22);
+        0 12px 26px rgba(155, 116, 35, 0.30),
+        0 0 14px rgba(217, 180, 90, 0.25);
+    }
+
+    .feature-button-reserve:hover,
+    .feature-button-reserve:focus-visible {
+      background: #f0d47d;
+      color: #102d42;
     }
 
     .feature-hero-art {
@@ -2842,7 +2877,7 @@ select {
 @'
 
 /* =========================================================
-   HOMEPAGE CAROUSEL — VISUAL POLISH
+   HOMEPAGE CAROUSEL â€” VISUAL POLISH
    ========================================================= */
 
 .carousel-slide {
@@ -2935,7 +2970,7 @@ select {
 @'
 
 /* =========================================================
-   TYPOGRAPHY — VISUAL POLISH
+   TYPOGRAPHY â€” VISUAL POLISH
    ========================================================= */
 
 h1 {
@@ -2980,7 +3015,7 @@ p {
 @'
 
 /* =========================================================
-   HOMEPAGE — SECTION SPACING POLISH
+   HOMEPAGE â€” SECTION SPACING POLISH
    ========================================================= */
 
 .home-carousel {
@@ -3032,7 +3067,7 @@ p {
 @'
 
 /* =========================================================
-   BRAND HEADER — POLISHED LOGO MARK
+   BRAND HEADER â€” POLISHED LOGO MARK
    ========================================================= */
 
 .brand-logo-placeholder {
@@ -3066,7 +3101,7 @@ p {
 @'
 
 /* =========================================================
-   NAVIGATION — PREMIUM POLISH
+   NAVIGATION â€” PREMIUM POLISH
    ========================================================= */
 
 .topbar {
@@ -3111,7 +3146,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL — TEXT PANEL POLISH
+   CAROUSEL â€” TEXT PANEL POLISH
    ========================================================= */
 
 .carousel-copy {
@@ -3163,7 +3198,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL — IMAGE PRESENTATION POLISH
+   CAROUSEL â€” IMAGE PRESENTATION POLISH
    ========================================================= */
 
 .carousel-image {
@@ -3204,3 +3239,5 @@ p {
 }
 
 '@ | Add-Content .\public\style.css
+
+
