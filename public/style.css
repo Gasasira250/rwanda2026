@@ -2976,3 +2976,54 @@ p {
 }
 
 '@ | Add-Content .\public\style.css
+
+@'
+
+/* =========================================================
+   HOMEPAGE — SECTION SPACING POLISH
+   ========================================================= */
+
+.home-carousel {
+  padding-bottom: 48px;
+}
+
+.founder-section {
+  position: relative;
+  margin-top: 12px;
+  padding-top: 56px;
+}
+
+.founder-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(217, 180, 90, 0.55),
+    transparent
+  );
+}
+
+.founder-content {
+  padding-top: 8px;
+}
+
+.founder-kicker {
+  margin-bottom: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.founder-content h2 {
+  margin-bottom: 16px;
+}
+
+.founder-bio {
+  max-width: 680px;
+}
+
+'@ | Add-Content .\public\style.css
