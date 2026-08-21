@@ -1,4 +1,4 @@
-
+ï»¿
     @font-face {
       font-family: "Khemenu";
       src: url("fonts/khemenu-font.otf") format("opentype");
@@ -2877,7 +2877,7 @@ select {
 @'
 
 /* =========================================================
-   HOMEPAGE CAROUSEL — VISUAL POLISH
+   HOMEPAGE CAROUSEL ï¿½ VISUAL POLISH
    ========================================================= */
 
 .carousel-slide {
@@ -2970,7 +2970,7 @@ select {
 @'
 
 /* =========================================================
-   TYPOGRAPHY — VISUAL POLISH
+   TYPOGRAPHY ï¿½ VISUAL POLISH
    ========================================================= */
 
 h1 {
@@ -3015,7 +3015,7 @@ p {
 @'
 
 /* =========================================================
-   HOMEPAGE — SECTION SPACING POLISH
+   HOMEPAGE ï¿½ SECTION SPACING POLISH
    ========================================================= */
 
 .home-carousel {
@@ -3067,7 +3067,7 @@ p {
 @'
 
 /* =========================================================
-   BRAND HEADER — POLISHED LOGO MARK
+   BRAND HEADER ï¿½ POLISHED LOGO MARK
    ========================================================= */
 
 .brand-logo-placeholder {
@@ -3101,7 +3101,7 @@ p {
 @'
 
 /* =========================================================
-   NAVIGATION — PREMIUM POLISH
+   NAVIGATION ï¿½ PREMIUM POLISH
    ========================================================= */
 
 .topbar {
@@ -3146,7 +3146,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL — TEXT PANEL POLISH
+   CAROUSEL ï¿½ TEXT PANEL POLISH
    ========================================================= */
 
 .carousel-copy {
@@ -3187,7 +3187,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL — IMAGE PRESENTATION POLISH
+   CAROUSEL ï¿½ IMAGE PRESENTATION POLISH
    ========================================================= */
 
 .carousel-image {
@@ -3232,7 +3232,7 @@ p {
 
 
 /* =========================================================
-   TITLE AREA — COMPACT FINAL POLISH
+   TITLE AREA ï¿½ COMPACT FINAL POLISH
    ========================================================= */
 
 .title-band {
@@ -3260,7 +3260,7 @@ p {
 
 
 /* =========================================================
-   HOMEPAGE — COMPACT VALUE PROPOSITION
+   HOMEPAGE ï¿½ COMPACT VALUE PROPOSITION
    ========================================================= */
 
 .home-intro {
@@ -3297,7 +3297,7 @@ p {
 
 
 /* =========================================================
-   HOMEPAGE — VALUE PROPOSITION
+   HOMEPAGE ï¿½ VALUE PROPOSITION
    ========================================================= */
 
 .home-value {
@@ -3361,7 +3361,7 @@ p {
 }
 
 
-/* FINAL HOMEPAGE CAROUSEL — FILL AVAILABLE SPACE */
+/* FINAL HOMEPAGE CAROUSEL ï¿½ FILL AVAILABLE SPACE */
 .home-carousel {
   position: relative;
   width: 100%;
@@ -3429,7 +3429,7 @@ body {
 }
 
 /* =========================================================
-   KHEMENU-REKH — DECORATIVE SIDE FRAME
+   KHEMENU-REKH ï¿½ DECORATIVE SIDE FRAME
    ========================================================= */
 
 body {
@@ -3537,7 +3537,7 @@ body {
 
 
 /* =========================================================
-   KHEMENU-REKH — REFINED CAROUSEL FRAME
+   KHEMENU-REKH ï¿½ REFINED CAROUSEL FRAME
    ========================================================= */
 
 .home-carousel {
@@ -3593,7 +3593,7 @@ body {
 }
 
 
-/* KHEMENU-REKH — LARGER CAROUSEL WITH SMALL SIDE SPACE */
+/* KHEMENU-REKH ï¿½ LARGER CAROUSEL WITH SMALL SIDE SPACE */
 
 .home-carousel {
   width: min(97%, 960px);
@@ -3641,7 +3641,7 @@ body {
 }
 
 
-/* KHEMENU-REKH — LARGER CAROUSEL WITH SMALL SIDE SPACE */
+/* KHEMENU-REKH ï¿½ LARGER CAROUSEL WITH SMALL SIDE SPACE */
 
 .home-carousel {
   width: min(97%, 960px);
@@ -3689,7 +3689,7 @@ body {
 }
 
 
-/* FINAL CAROUSEL WIDTH — VERY SMALL SIDE SPACE */
+/* FINAL CAROUSEL WIDTH ï¿½ VERY SMALL SIDE SPACE */
 
 .home-carousel {
   width: 98%;
@@ -3718,7 +3718,7 @@ body {
 
 
 /* =========================================
-   KHEMENU SIDEBAR FRAME — OPTION A
+   KHEMENU SIDEBAR FRAME ï¿½ OPTION A
    Subtle navy + gold ornamental design
    ========================================= */
 
@@ -3797,7 +3797,7 @@ body {
   }
 }
 
-/* Keep mobile clean — no side frame */
+/* Keep mobile clean ï¿½ no side frame */
 @media (max-width: 900px) {
   body::before,
   body::after {
@@ -3805,3 +3805,443 @@ body {
   }
 }
 
+
+/* =========================================
+   KHEMENU-REKH ï¿½ CURVED SIDEBAR PILLARS
+   Navy pillars + gold inner curves +
+   subtle geometric ornaments
+   ========================================= */
+
+@media (min-width: 901px) {
+
+  body::before,
+  body::after {
+    width: clamp(22px, 3.5vw, 52px);
+    background:
+      radial-gradient(
+        ellipse at center,
+        rgba(214, 166, 46, 0.10) 0%,
+        transparent 55%
+      ),
+      linear-gradient(
+        180deg,
+        #052b59 0%,
+        #063b78 48%,
+        #052b59 100%
+      );
+    box-shadow:
+      0 0 24px rgba(0, 0, 0, 0.18),
+      inset 0 0 18px rgba(214, 166, 46, 0.05);
+    z-index: 0;
+  }
+
+  /* Curved gold inner line ï¿½ left */
+  body::before {
+    border-right: 2px solid rgba(214, 166, 46, 0.55);
+    border-radius: 0 28px 28px 0;
+  }
+
+  /* Curved gold inner line ï¿½ right */
+  body::after {
+    border-left: 2px solid rgba(214, 166, 46, 0.55);
+    border-radius: 28px 0 0 28px;
+  }
+
+  /* Subtle ornamental frame around the website */
+  .page-shell {
+    box-shadow:
+      0 0 0 1px rgba(214, 166, 46, 0.12),
+      0 18px 40px rgba(0, 0, 0, 0.28);
+  }
+
+  /* Small geometric diamond ornaments */
+  .page-shell::before,
+  .page-shell::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background: rgba(214, 166, 46, 0.72);
+    box-shadow:
+      0 0 10px rgba(214, 166, 46, 0.32);
+    transform: rotate(45deg);
+    z-index: 12;
+    pointer-events: none;
+  }
+
+  .page-shell::before {
+    top: 42px;
+    left: -5px;
+  }
+
+  .page-shell::after {
+    top: 42px;
+    right: -5px;
+  }
+}
+
+/* Keep the pillars clean on mobile */
+@media (max-width: 900px) {
+  body::before,
+  body::after {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   KHEMENU ï¿½ ELEGANT GOLD SIDEBAR FRAME
+   Decorative desktop-wallpaper treatment
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  body {
+    position: relative;
+    background:
+      radial-gradient(circle at 50% 20%, rgba(217, 180, 90, 0.10), transparent 32%),
+      linear-gradient(90deg, #252525 0%, #383838 7%, #4b4b4b 50%, #383838 93%, #252525 100%);
+  }
+
+  body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 34px;
+    z-index: 0;
+    pointer-events: none;
+
+    background:
+      radial-gradient(circle at 50% 14%, rgba(240, 212, 125, 0.22) 0 2px, transparent 3px),
+      radial-gradient(circle at 50% 86%, rgba(240, 212, 125, 0.18) 0 2px, transparent 3px),
+      linear-gradient(
+        180deg,
+        rgba(240, 212, 125, 0.08),
+        rgba(217, 180, 90, 0.18) 25%,
+        rgba(185, 143, 47, 0.12) 50%,
+        rgba(217, 180, 90, 0.18) 75%,
+        rgba(240, 212, 125, 0.08)
+      );
+
+    border-top: 1px solid rgba(240, 212, 125, 0.35);
+    border-bottom: 1px solid rgba(240, 212, 125, 0.35);
+
+    box-shadow:
+      inset 0 0 12px rgba(217, 180, 90, 0.10),
+      0 0 18px rgba(0, 0, 0, 0.18);
+  }
+
+  body::before {
+    left: 0;
+    border-right: 1px solid rgba(217, 180, 90, 0.65);
+    border-radius: 0 22px 22px 0;
+  }
+
+  body::after {
+    right: 0;
+    border-left: 1px solid rgba(217, 180, 90, 0.65);
+    border-radius: 22px 0 0 22px;
+  }
+
+  .page-shell {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-shell::before,
+  .page-shell::after {
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Elegant inner gold curves */
+  .page-shell {
+    border-left: 1px solid rgba(217, 180, 90, 0.30);
+    border-right: 1px solid rgba(217, 180, 90, 0.30);
+
+    box-shadow:
+      0 0 0 1px rgba(217, 180, 90, 0.08),
+      0 18px 40px rgba(0, 0, 0, 0.28),
+      0 0 35px rgba(217, 180, 90, 0.06);
+  }
+
+  /* Small ornamental gold diamonds */
+  .page-shell::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: #d9b45a;
+    box-shadow:
+      0 0 0 3px rgba(217, 180, 90, 0.08),
+      0 0 12px rgba(217, 180, 90, 0.20);
+    transform: rotate(45deg);
+    top: 42px;
+    left: 50%;
+    right: auto;
+    margin-left: -4px;
+  }
+
+  .page-shell::after {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: #d9b45a;
+    box-shadow:
+      0 0 0 3px rgba(217, 180, 90, 0.08),
+      0 0 12px rgba(217, 180, 90, 0.20);
+    transform: rotate(45deg);
+    top: auto;
+    bottom: 42px;
+    right: auto;
+    left: 50%;
+    margin-left: -4px;
+  }
+}
+
+/* Keep the elegant frame clean on smaller screens */
+@media (max-width: 900px) {
+  body::before,
+  body::after {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   KHEMENU ï¿½ ELEGANT HOMEPAGE BANNER
+   ========================================================= */
+
+.home-carousel {
+  position: relative;
+  isolation: isolate;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home-carousel::before {
+  content: "";
+  position: absolute;
+  inset: 8px 0;
+  border: 1px solid rgba(217, 180, 90, 0.55);
+  border-radius: 30px;
+  box-shadow:
+    0 0 18px rgba(217, 180, 90, 0.12),
+    inset 0 0 18px rgba(217, 180, 90, 0.05);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.home-carousel::after {
+  content: "?";
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(217, 180, 90, 0.65);
+  border-radius: 50%;
+  background: #0d5f9f;
+  color: #d9b45a;
+  font-size: 13px;
+  box-shadow:
+    0 0 14px rgba(217, 180, 90, 0.22),
+    0 5px 14px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+  z-index: 4;
+}
+
+.carousel-track {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-slide {
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(217, 180, 90, 0.45);
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.20),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+/* Small decorative gold lines */
+.carousel-slide::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(217, 180, 90, 0.65),
+    transparent
+  );
+  pointer-events: none;
+  z-index: 5;
+}
+
+@media (max-width: 900px) {
+  .home-carousel {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .home-carousel::before {
+    border-radius: 22px;
+  }
+
+  .home-carousel::after {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   KHEMENU ï¿½ 3D VOLUMETRIC SIDEBAR ART
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  body {
+    background:
+      url("images/khemenu-sidebar-bg.png") center top / cover fixed no-repeat,
+      #071426;
+  }
+
+  .page-shell {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Keep the artwork visible in the outer side margins */
+  body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: max(40px, calc((100vw - min(92vw, 980px)) / 2));
+    background:
+      url("images/khemenu-sidebar-bg.png") center center / cover no-repeat;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  body::before {
+    left: 0;
+    background-position: left center;
+  }
+
+  body::after {
+    right: 0;
+    background-position: right center;
+  }
+
+  /* Elegant separation between artwork and website */
+  .page-shell::before,
+  .page-shell::after {
+    z-index: -1;
+  }
+}
+
+/* Mobile: remove the decorative side artwork */
+@media (max-width: 900px) {
+  body {
+    background: #071426;
+  }
+}
+
+
+@'
+/* =========================================================
+   KHEMENU â€” REFINED 3D SIDEBAR ART
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  body {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(7, 20, 38, 0.78) 0%,
+        rgba(7, 20, 38, 0.18) 8%,
+        rgba(7, 20, 38, 0) 18%,
+        rgba(7, 20, 38, 0) 82%,
+        rgba(7, 20, 38, 0.18) 92%,
+        rgba(7, 20, 38, 0.78) 100%
+      ),
+      url("images/khemenu-sidebar-bg.png") center center / cover fixed no-repeat;
+  }
+
+  body::before,
+  body::after {
+    width: clamp(55px, 8vw, 125px);
+    opacity: 0.82;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(7, 20, 38, 0.35),
+        rgba(7, 20, 38, 0)
+      ),
+      url("images/khemenu-sidebar-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  body::before {
+    left: 0;
+  }
+
+  body::after {
+    right: 0;
+    transform: scaleX(-1);
+  }
+
+  .page-shell {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+  }
+
+}
+
+/* Mobile/tablet â€” keep the clean layout */
+@media (max-width: 900px) {
+  body {
+    background: #071426;
+  }
+
+  body::before,
+  body::after {
+    display: none;
+  }
+}
+'@ | Add-Content .\public\style.css/* =========================================================
+   REMOVE CAROUSEL GOLD FRAME + QUESTION MARK
+   ========================================================= */
+
+.home-carousel::before {
+  display: none !important;
+}
+
+.home-carousel::after {
+  display: none !important;
+}
+
+.home-carousel .carousel-slide {
+  border: 0 !important;
+}
+
+/* Remove the small decorative gold line inside the carousel */
+.home-carousel .carousel-slide::before {
+  display: none !important;
+}
