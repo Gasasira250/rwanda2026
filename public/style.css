@@ -4319,3 +4319,438 @@ body {
   }
 }
 
+
+/* =========================================================
+   KHEMENU — COMPACT HOMEPAGE CAROUSEL
+   Reduce height so surrounding headings remain visible
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  .home-carousel {
+    padding-top: 6px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .home-carousel .carousel-track {
+    min-height: 340px !important;
+    height: 340px !important;
+  }
+
+  .home-carousel .carousel-slide {
+    min-height: 340px !important;
+    height: 340px !important;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .home-carousel .carousel-track {
+    min-height: 320px !important;
+  }
+
+  .home-carousel .carousel-slide {
+    min-height: 320px !important;
+  }
+
+}
+
+@media (max-width: 620px) {
+
+  .home-carousel {
+    padding-top: 10px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .home-carousel .carousel-track {
+    min-height: 280px !important;
+    height: auto !important;
+  }
+
+  .home-carousel .carousel-slide {
+    min-height: 280px !important;
+    height: auto !important;
+  }
+
+}
+
+/* =========================================================
+   KHEMENU — EXTRA COMPACT HOMEPAGE CAROUSEL
+   Keep homepage headings visible
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  .home-carousel {
+    padding-top: 4px !important;
+    padding-bottom: 8px !important;
+    margin-top: 6px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .home-carousel .carousel-track {
+    min-height: 280px !important;
+    height: 280px !important;
+  }
+
+  .home-carousel .carousel-slide {
+    min-height: 280px !important;
+    height: 280px !important;
+  }
+
+  .home-carousel .carousel-image {
+    min-height: 280px !important;
+    height: 280px !important;
+  }
+
+}
+
+/* =========================================
+   KHEMENU — COMPACT HOMEPAGE CAROUSEL
+   Keep section headings fully visible
+   ========================================= */
+
+@media (min-width: 901px) {
+  .home-carousel {
+    padding-top: 6px !important;
+    padding-bottom: 18px !important;
+  }
+
+  .home-carousel .carousel-track,
+  .home-carousel .carousel-slide {
+    min-height: 320px !important;
+    height: 320px !important;
+  }
+
+  .home-carousel .carousel-image,
+  .home-carousel .carousel-copy {
+    min-height: 320px !important;
+    height: 320px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-carousel .carousel-track,
+  .home-carousel .carousel-slide {
+    min-height: 300px !important;
+    height: 300px !important;
+  }
+
+  .home-carousel .carousel-image {
+    min-height: 180px !important;
+  }
+}
+
+/* =========================================================
+   KHEMENU — FINAL CAROUSEL HEADING VISIBILITY FIX
+   Compact, balanced carousel sizing
+   Keeps all section headings clearly visible
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  /* Give the heading above the carousel enough breathing room */
+  .home-carousel {
+    margin-top: 8px !important;
+    padding-top: 4px !important;
+    padding-bottom: 14px !important;
+  }
+
+  /* Consistent compact carousel height */
+  .home-carousel .carousel-track,
+  .home-carousel .carousel-slide {
+    height: 300px !important;
+    min-height: 300px !important;
+  }
+
+  /* Keep both sides of every slide the same height */
+  .home-carousel .carousel-image,
+  .home-carousel .carousel-copy {
+    height: 300px !important;
+    min-height: 300px !important;
+  }
+
+  /* Keep carousel content from creating extra height */
+  .home-carousel .carousel-copy {
+    overflow: hidden !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+
+  /* Keep the carousel itself visually contained */
+  .home-carousel .carousel-track {
+    overflow: hidden !important;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) and (min-width: 621px) {
+
+  .home-carousel {
+    margin-top: 6px !important;
+    padding-top: 4px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .home-carousel .carousel-track,
+  .home-carousel .carousel-slide {
+    height: 280px !important;
+    min-height: 280px !important;
+  }
+
+  .home-carousel .carousel-image,
+  .home-carousel .carousel-copy {
+    min-height: 280px !important;
+    height: 280px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 620px) {
+
+  .home-carousel {
+    margin-top: 6px !important;
+    padding-top: 4px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .home-carousel .carousel-track,
+  .home-carousel .carousel-slide {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .home-carousel .carousel-image {
+    min-height: 180px !important;
+    height: 180px !important;
+  }
+
+  .home-carousel .carousel-copy {
+    min-height: 180px !important;
+    height: auto !important;
+  }
+}
+
+
+/* =========================================================
+   KHEMENU — FINAL ALL-CAROUSEL SIZE OVERRIDE
+   Forces every carousel slide to the same compact height
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  .home-carousel {
+    height: 330px !important;
+    min-height: 330px !important;
+    max-height: 330px !important;
+    margin-top: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .home-carousel .carousel-track {
+    height: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
+    overflow: hidden !important;
+  }
+
+  .home-carousel .carousel-slide,
+  .home-carousel .carousel-slide.is-active,
+  .home-carousel .carousel-slide:nth-child(n) {
+    height: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
+    overflow: hidden !important;
+  }
+
+  .home-carousel .carousel-image,
+  .home-carousel .carousel-copy {
+    height: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
+    overflow: hidden !important;
+  }
+
+  /* Make the text side compact without cutting its heading */
+  .home-carousel .carousel-copy {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* Prevent the final slides from inheriting larger heights */
+  .home-carousel .carousel-slide:nth-child(4),
+  .home-carousel .carousel-slide:nth-child(5) {
+    height: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
+  }
+}
+
+
+/* =========================================================
+   KHEMENU — FINAL CAROUSEL LAYOUT
+   Keep ALL headings visible above the carousel
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  /* The carousel sits naturally below the content above it */
+  main {
+    position: relative;
+  }
+
+  .home-carousel {
+    position: relative !important;
+    display: block !important;
+    width: 96% !important;
+    max-width: 960px !important;
+    height: 300px !important;
+    min-height: 300px !important;
+    margin: 20px auto 24px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .home-carousel .carousel-track {
+    position: relative !important;
+    display: flex !important;
+    width: 100% !important;
+    height: 300px !important;
+    min-height: 300px !important;
+    overflow: hidden !important;
+  }
+
+  .home-carousel .carousel-slide {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 300px !important;
+    min-width: 100% !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
+    display: grid !important;
+    overflow: hidden !important;
+  }
+
+  /* Keep the image and text halves inside the same compact box */
+  .home-carousel .carousel-image,
+  .home-carousel .carousel-copy {
+    height: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
+    overflow: hidden !important;
+  }
+
+  /* Give the headings room inside the text panel */
+  .home-carousel .carousel-copy {
+    padding: 24px 28px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+  .home-carousel .carousel-copy h2 {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .home-carousel .carousel-copy p {
+    margin-top: 0 !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .home-carousel {
+    width: 94% !important;
+    margin: 12px auto 20px !important;
+    padding: 0 !important;
+  }
+
+  .home-carousel .carousel-slide {
+    position: absolute !important;
+  }
+}
+
+
+/* =========================================================
+   KHEMENU — RESTORE CAROUSEL DOT INDICATORS
+   ========================================================= */
+
+.home-carousel {
+  overflow: visible !important;
+}
+
+.home-carousel .carousel-track {
+  overflow: hidden !important;
+}
+
+/* Keep the carousel itself compact */
+@media (min-width: 901px) {
+  .home-carousel {
+    margin-bottom: 52px !important;
+  }
+}
+
+/* Keep indicators visible below the carousel */
+.carousel-dots,
+.carousel-indicators,
+.home-carousel .carousel-dots,
+.home-carousel .carousel-indicators {
+  position: absolute !important;
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 20 !important;
+  bottom: -38px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 9px !important;
+}
+
+/* Individual dots */
+.carousel-dots button,
+.carousel-indicators button,
+.home-carousel .carousel-dots button,
+.home-carousel .carousel-indicators button {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 9px !important;
+  height: 9px !important;
+  min-width: 9px !important;
+  min-height: 9px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+}
+
+/* Mobile positioning */
+@media (max-width: 900px) {
+  .home-carousel {
+    margin-bottom: 48px !important;
+  }
+
+  .carousel-dots,
+  .carousel-indicators,
+  .home-carousel .carousel-dots,
+  .home-carousel .carousel-indicators {
+    bottom: -34px !important;
+  }
+}
+
