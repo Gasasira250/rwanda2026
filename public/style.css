@@ -3716,3 +3716,92 @@ body {
   }
 }
 
+
+/* =========================================
+   KHEMENU SIDEBAR FRAME — OPTION A
+   Subtle navy + gold ornamental design
+   ========================================= */
+
+@media (min-width: 901px) {
+
+  body {
+    position: relative;
+  }
+
+  /* Left decorative frame */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: clamp(18px, 3.5vw, 52px);
+    background:
+      linear-gradient(
+        90deg,
+        rgba(5, 43, 89, 0.96),
+        rgba(6, 59, 120, 0.82),
+        rgba(214, 166, 46, 0.12)
+      );
+    border-right: 1px solid rgba(214, 166, 46, 0.45);
+    box-shadow:
+      inset -8px 0 18px rgba(0, 0, 0, 0.12);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Right decorative frame */
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: clamp(18px, 3.5vw, 52px);
+    background:
+      linear-gradient(
+        270deg,
+        rgba(5, 43, 89, 0.96),
+        rgba(6, 59, 120, 0.82),
+        rgba(214, 166, 46, 0.12)
+      );
+    border-left: 1px solid rgba(214, 166, 46, 0.45);
+    box-shadow:
+      inset 8px 0 18px rgba(0, 0, 0, 0.12);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Gold ornamental lines */
+  .page-shell::before {
+    box-sizing: border-box;
+    border: 1px solid rgba(214, 166, 46, 0.30);
+    box-shadow:
+      0 0 0 5px rgba(214, 166, 46, 0.04),
+      inset 0 0 18px rgba(214, 166, 46, 0.04);
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .page-shell::after {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Keep the actual website above the decorative frame */
+  .page-shell {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Keep mobile clean — no side frame */
+@media (max-width: 900px) {
+  body::before,
+  body::after {
+    display: none;
+  }
+}
+
