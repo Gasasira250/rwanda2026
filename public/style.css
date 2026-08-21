@@ -1,4 +1,4 @@
-ï»¿
+
     @font-face {
       font-family: "Khemenu";
       src: url("fonts/khemenu-font.otf") format("opentype");
@@ -2877,7 +2877,7 @@ select {
 @'
 
 /* =========================================================
-   HOMEPAGE CAROUSEL â€” VISUAL POLISH
+   HOMEPAGE CAROUSEL — VISUAL POLISH
    ========================================================= */
 
 .carousel-slide {
@@ -2970,7 +2970,7 @@ select {
 @'
 
 /* =========================================================
-   TYPOGRAPHY â€” VISUAL POLISH
+   TYPOGRAPHY — VISUAL POLISH
    ========================================================= */
 
 h1 {
@@ -3015,7 +3015,7 @@ p {
 @'
 
 /* =========================================================
-   HOMEPAGE â€” SECTION SPACING POLISH
+   HOMEPAGE — SECTION SPACING POLISH
    ========================================================= */
 
 .home-carousel {
@@ -3067,7 +3067,7 @@ p {
 @'
 
 /* =========================================================
-   BRAND HEADER â€” POLISHED LOGO MARK
+   BRAND HEADER — POLISHED LOGO MARK
    ========================================================= */
 
 .brand-logo-placeholder {
@@ -3101,7 +3101,7 @@ p {
 @'
 
 /* =========================================================
-   NAVIGATION â€” PREMIUM POLISH
+   NAVIGATION — PREMIUM POLISH
    ========================================================= */
 
 .topbar {
@@ -3146,7 +3146,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL â€” TEXT PANEL POLISH
+   CAROUSEL — TEXT PANEL POLISH
    ========================================================= */
 
 .carousel-copy {
@@ -3162,18 +3162,7 @@ p {
   box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
 }
 
-.carousel-copy::before {
-  content: "";
-  position: absolute;
-  left: clamp(24px, 3vw, 40px);
-  top: 50%;
-  width: 3px;
-  height: 72px;
-  border-radius: 3px;
-  background: #d9b45a;
-  transform: translateY(-50%);
-  box-shadow: 0 0 14px rgba(217, 180, 90, 0.28);
-}
+
 
 .carousel-copy h2 {
   margin: 0 0 16px;
@@ -3198,7 +3187,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL â€” IMAGE PRESENTATION POLISH
+   CAROUSEL — IMAGE PRESENTATION POLISH
    ========================================================= */
 
 .carousel-image {
@@ -3243,7 +3232,7 @@ p {
 
 
 /* =========================================================
-   TITLE AREA â€” COMPACT FINAL POLISH
+   TITLE AREA — COMPACT FINAL POLISH
    ========================================================= */
 
 .title-band {
@@ -3269,3 +3258,140 @@ p {
   padding: 9px 18px;
 }
 
+
+/* =========================================================
+   HOMEPAGE — COMPACT VALUE PROPOSITION
+   ========================================================= */
+
+.home-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 28px 18px;
+  text-align: center;
+}
+
+.home-intro-kicker {
+  margin: 0 0 6px;
+  color: #d9b45a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-intro h2 {
+  margin: 0 0 8px;
+  color: #063f6b;
+  font-family: "Khemenu", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.15;
+}
+
+.home-intro-text {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #17364d;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   HOMEPAGE — VALUE PROPOSITION
+   ========================================================= */
+
+.home-value {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 18px 28px 12px;
+  text-align: center;
+}
+
+.home-value-kicker {
+  margin: 0 0 6px;
+  color: #d9b45a;
+  font-family: "Khemenu", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-value h2 {
+  margin: 0 auto 8px;
+  max-width: 680px;
+  color: #063f6b;
+  font-family: "Khemenu", sans-serif;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  line-height: 1.18;
+}
+
+.home-value-text {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #17364d;
+  font-family: "Stilu", sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .home-value {
+    padding: 14px 20px 10px;
+  }
+
+  .home-value h2 {
+    font-size: 1.4rem;
+  }
+
+  .home-value-text {
+    font-size: 0.92rem;
+  }
+}
+
+
+/* Remove vertical decorative line from carousel text */
+
+
+
+/* Carousel spacing refinement */
+.home-carousel {
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+
+/* FINAL HOMEPAGE CAROUSEL — FILL AVAILABLE SPACE */
+.home-carousel {
+  position: relative;
+  width: 100%;
+  padding: 10px 0 20px;
+  overflow: hidden;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  border-radius: 0;
+}
+
+
+
+@'
+
+/* FINAL CAROUSEL SPACING AND CURVED BORDERS */
+.home-carousel {
+  padding: 10px 12px 20px;
+}
+
+.carousel-slide {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+'@ | Add-Content .\public\style.css
