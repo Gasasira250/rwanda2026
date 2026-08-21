@@ -1,4 +1,4 @@
-ï»¿
+
     @font-face {
       font-family: "Khemenu";
       src: url("fonts/khemenu-font.otf") format("opentype");
@@ -2877,7 +2877,7 @@ select {
 @'
 
 /* =========================================================
-   HOMEPAGE CAROUSEL ï¿½ VISUAL POLISH
+   HOMEPAGE CAROUSEL ? VISUAL POLISH
    ========================================================= */
 
 .carousel-slide {
@@ -2970,7 +2970,7 @@ select {
 @'
 
 /* =========================================================
-   TYPOGRAPHY ï¿½ VISUAL POLISH
+   TYPOGRAPHY ? VISUAL POLISH
    ========================================================= */
 
 h1 {
@@ -3015,7 +3015,7 @@ p {
 @'
 
 /* =========================================================
-   HOMEPAGE ï¿½ SECTION SPACING POLISH
+   HOMEPAGE ? SECTION SPACING POLISH
    ========================================================= */
 
 .home-carousel {
@@ -3067,7 +3067,7 @@ p {
 @'
 
 /* =========================================================
-   BRAND HEADER ï¿½ POLISHED LOGO MARK
+   BRAND HEADER ? POLISHED LOGO MARK
    ========================================================= */
 
 .brand-logo-placeholder {
@@ -3101,7 +3101,7 @@ p {
 @'
 
 /* =========================================================
-   NAVIGATION ï¿½ PREMIUM POLISH
+   NAVIGATION ? PREMIUM POLISH
    ========================================================= */
 
 .topbar {
@@ -3146,7 +3146,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL ï¿½ TEXT PANEL POLISH
+   CAROUSEL ? TEXT PANEL POLISH
    ========================================================= */
 
 .carousel-copy {
@@ -3187,7 +3187,7 @@ p {
 @'
 
 /* =========================================================
-   CAROUSEL ï¿½ IMAGE PRESENTATION POLISH
+   CAROUSEL ? IMAGE PRESENTATION POLISH
    ========================================================= */
 
 .carousel-image {
@@ -3232,7 +3232,7 @@ p {
 
 
 /* =========================================================
-   TITLE AREA ï¿½ COMPACT FINAL POLISH
+   TITLE AREA ? COMPACT FINAL POLISH
    ========================================================= */
 
 .title-band {
@@ -3260,7 +3260,7 @@ p {
 
 
 /* =========================================================
-   HOMEPAGE ï¿½ COMPACT VALUE PROPOSITION
+   HOMEPAGE ? COMPACT VALUE PROPOSITION
    ========================================================= */
 
 .home-intro {
@@ -3297,7 +3297,7 @@ p {
 
 
 /* =========================================================
-   HOMEPAGE ï¿½ VALUE PROPOSITION
+   HOMEPAGE ? VALUE PROPOSITION
    ========================================================= */
 
 .home-value {
@@ -3361,7 +3361,7 @@ p {
 }
 
 
-/* FINAL HOMEPAGE CAROUSEL ï¿½ FILL AVAILABLE SPACE */
+/* FINAL HOMEPAGE CAROUSEL ? FILL AVAILABLE SPACE */
 .home-carousel {
   position: relative;
   width: 100%;
@@ -3429,7 +3429,7 @@ body {
 }
 
 /* =========================================================
-   KHEMENU-REKH ï¿½ DECORATIVE SIDE FRAME
+   KHEMENU-REKH ? DECORATIVE SIDE FRAME
    ========================================================= */
 
 body {
@@ -3537,7 +3537,7 @@ body {
 
 
 /* =========================================================
-   KHEMENU-REKH ï¿½ REFINED CAROUSEL FRAME
+   KHEMENU-REKH ? REFINED CAROUSEL FRAME
    ========================================================= */
 
 .home-carousel {
@@ -3593,7 +3593,7 @@ body {
 }
 
 
-/* KHEMENU-REKH ï¿½ LARGER CAROUSEL WITH SMALL SIDE SPACE */
+/* KHEMENU-REKH ? LARGER CAROUSEL WITH SMALL SIDE SPACE */
 
 .home-carousel {
   width: min(97%, 960px);
@@ -3641,7 +3641,7 @@ body {
 }
 
 
-/* KHEMENU-REKH ï¿½ LARGER CAROUSEL WITH SMALL SIDE SPACE */
+/* KHEMENU-REKH ? LARGER CAROUSEL WITH SMALL SIDE SPACE */
 
 .home-carousel {
   width: min(97%, 960px);
@@ -3689,7 +3689,7 @@ body {
 }
 
 
-/* FINAL CAROUSEL WIDTH ï¿½ VERY SMALL SIDE SPACE */
+/* FINAL CAROUSEL WIDTH ? VERY SMALL SIDE SPACE */
 
 .home-carousel {
   width: 98%;
@@ -3718,7 +3718,7 @@ body {
 
 
 /* =========================================
-   KHEMENU SIDEBAR FRAME ï¿½ OPTION A
+   KHEMENU SIDEBAR FRAME ? OPTION A
    Subtle navy + gold ornamental design
    ========================================= */
 
@@ -3797,7 +3797,7 @@ body {
   }
 }
 
-/* Keep mobile clean ï¿½ no side frame */
+/* Keep mobile clean ? no side frame */
 @media (max-width: 900px) {
   body::before,
   body::after {
@@ -3807,7 +3807,7 @@ body {
 
 
 /* =========================================
-   KHEMENU-REKH ï¿½ CURVED SIDEBAR PILLARS
+   KHEMENU-REKH ? CURVED SIDEBAR PILLARS
    Navy pillars + gold inner curves +
    subtle geometric ornaments
    ========================================= */
@@ -3835,13 +3835,13 @@ body {
     z-index: 0;
   }
 
-  /* Curved gold inner line ï¿½ left */
+  /* Curved gold inner line ? left */
   body::before {
     border-right: 2px solid rgba(214, 166, 46, 0.55);
     border-radius: 0 28px 28px 0;
   }
 
-  /* Curved gold inner line ï¿½ right */
+  /* Curved gold inner line ? right */
   body::after {
     border-left: 2px solid rgba(214, 166, 46, 0.55);
     border-radius: 28px 0 0 28px;
@@ -3889,7 +3889,7 @@ body {
 
 
 /* =========================================================
-   KHEMENU ï¿½ ELEGANT GOLD SIDEBAR FRAME
+   KHEMENU ? ELEGANT GOLD SIDEBAR FRAME
    Decorative desktop-wallpaper treatment
    ========================================================= */
 
@@ -4009,7 +4009,7 @@ body {
 
 
 /* =========================================================
-   KHEMENU ï¿½ ELEGANT HOMEPAGE BANNER
+   KHEMENU ? ELEGANT HOMEPAGE BANNER
    ========================================================= */
 
 .home-carousel {
@@ -4105,14 +4105,14 @@ body {
 
 
 /* =========================================================
-   KHEMENU ï¿½ 3D VOLUMETRIC SIDEBAR ART
+   KHEMENU ? 3D VOLUMETRIC SIDEBAR ART
    ========================================================= */
 
 @media (min-width: 901px) {
 
   body {
     background:
-      url("images/khemenu-sidebar-bg.png") center top / cover fixed no-repeat,
+      url("images/khemenu-pyramid.jpg") center top / cover fixed no-repeat,
       #071426;
   }
 
@@ -4130,7 +4130,7 @@ body {
     bottom: 0;
     width: max(40px, calc((100vw - min(92vw, 980px)) / 2));
     background:
-      url("images/khemenu-sidebar-bg.png") center center / cover no-repeat;
+      url("images/khemenu-pyramid.jpg") center center / cover no-repeat;
     z-index: 0;
     pointer-events: none;
   }
@@ -4162,7 +4162,7 @@ body {
 
 @'
 /* =========================================================
-   KHEMENU â€” REFINED 3D SIDEBAR ART
+   KHEMENU — REFINED 3D SIDEBAR ART
    ========================================================= */
 
 @media (min-width: 901px) {
@@ -4178,7 +4178,7 @@ body {
         rgba(7, 20, 38, 0.18) 92%,
         rgba(7, 20, 38, 0.78) 100%
       ),
-      url("images/khemenu-sidebar-bg.png") center center / cover fixed no-repeat;
+      url("images/khemenu-pyramid.jpg") center center / cover fixed no-repeat;
   }
 
   body::before,
@@ -4191,7 +4191,7 @@ body {
         rgba(7, 20, 38, 0.35),
         rgba(7, 20, 38, 0)
       ),
-      url("images/khemenu-sidebar-bg.png");
+      url("images/khemenu-pyramid.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -4214,7 +4214,7 @@ body {
 
 }
 
-/* Mobile/tablet â€” keep the clean layout */
+/* Mobile/tablet — keep the clean layout */
 @media (max-width: 900px) {
   body {
     background: #071426;
@@ -4245,3 +4245,77 @@ body {
 .home-carousel .carousel-slide::before {
   display: none !important;
 }
+
+
+/* =========================================
+   KHEMENU — PYRAMID SIDEBAR MOTION
+   Subtle forward / backward 3D movement
+   ========================================= */
+
+@media (min-width: 901px) {
+
+  body::before,
+  body::after {
+    animation: pyramidBreathing 7s ease-in-out infinite;
+    transform-origin: center center;
+    will-change: transform, background-size;
+  }
+
+  body::after {
+    animation-delay: -3.5s;
+  }
+
+  @keyframes pyramidBreathing {
+    0%, 100% {
+      transform: scale(1);
+      background-size: cover;
+    }
+
+    50% {
+      transform: scale(1.08);
+      background-size: 108% auto;
+    }
+  }
+}
+
+
+/* =========================================
+   KHEMENU — MATCHED PYRAMID SIDEBARS
+   Same pyramid image left + right
+   Synchronized forward/backward motion
+   ========================================= */
+
+@media (min-width: 901px) {
+
+  body::before,
+  body::after {
+    animation: pyramidForwardBackward 8s ease-in-out infinite;
+    transform-origin: center center;
+    will-change: transform;
+  }
+
+  body::after {
+    animation-name: pyramidForwardBackwardRight;
+  }
+
+  @keyframes pyramidForwardBackward {
+    0%, 100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.10);
+    }
+  }
+
+  @keyframes pyramidForwardBackwardRight {
+    0%, 100% {
+      transform: scaleX(-1) scale(1);
+    }
+
+    50% {
+      transform: scaleX(-1) scale(1.10);
+    }
+  }
+}
+
