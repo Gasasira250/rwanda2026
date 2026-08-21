@@ -3427,3 +3427,111 @@ body {
   isolation: isolate;
   overflow: hidden;
 }
+
+/* =========================================================
+   KHEMENU-REKH — DECORATIVE SIDE FRAME
+   ========================================================= */
+
+body {
+  background:
+    radial-gradient(
+      circle at 0% 50%,
+      rgba(217, 180, 90, 0.10),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      rgba(13, 95, 159, 0.16),
+      transparent 22%
+    ),
+    linear-gradient(
+      180deg,
+      #031d32 0%,
+      #062b46 50%,
+      #031d32 100%
+    );
+}
+
+/* Subtle gold frame around the main website */
+.page-shell {
+  position: relative;
+  box-shadow:
+    0 0 0 1px rgba(217, 180, 90, 0.18),
+    0 0 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Decorative inner lines */
+.page-shell::before,
+.page-shell::after {
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* Left gold accent */
+.page-shell::before {
+  content: "";
+  position: fixed;
+  top: 12%;
+  bottom: 12%;
+  left: max(
+    calc((100vw - min(92vw, 980px)) / 2 - 10px),
+    6px
+  );
+  width: 2px;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(217, 180, 90, 0.45) 25%,
+      rgba(217, 180, 90, 0.75) 50%,
+      rgba(217, 180, 90, 0.45) 75%,
+      transparent
+    );
+  box-shadow:
+    0 0 12px rgba(217, 180, 90, 0.22);
+}
+
+/* Right gold accent */
+.page-shell::after {
+  content: "";
+  position: fixed;
+  top: 12%;
+  bottom: 12%;
+  right: max(
+    calc((100vw - min(92vw, 980px)) / 2 - 10px),
+    6px
+  );
+  width: 2px;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(217, 180, 90, 0.45) 25%,
+      rgba(217, 180, 90, 0.75) 50%,
+      rgba(217, 180, 90, 0.45) 75%,
+      transparent
+    );
+  box-shadow:
+    0 0 12px rgba(217, 180, 90, 0.22);
+}
+
+/* Keep the decorative frame subtle on smaller screens */
+@media (max-width: 1000px) {
+  body {
+    background:
+      linear-gradient(
+        180deg,
+        #031d32 0%,
+        #062b46 50%,
+        #031d32 100%
+      );
+  }
+
+  .page-shell::before,
+  .page-shell::after {
+    display: none;
+  }
+}
+
