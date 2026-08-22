@@ -1,4 +1,4 @@
-
+ï»¿
     @font-face {
       font-family: "Khemenu";
       src: url("fonts/khemenu-font.otf") format("opentype");
@@ -4162,7 +4162,7 @@ body {
 
 @'
 /* =========================================================
-   KHEMENU — REFINED 3D SIDEBAR ART
+   KHEMENU ï¿½ REFINED 3D SIDEBAR ART
    ========================================================= */
 
 @media (min-width: 901px) {
@@ -4214,7 +4214,7 @@ body {
 
 }
 
-/* Mobile/tablet — keep the clean layout */
+/* Mobile/tablet ï¿½ keep the clean layout */
 @media (max-width: 900px) {
   body {
     background: #071426;
@@ -4248,7 +4248,7 @@ body {
 
 
 /* =========================================
-   KHEMENU — PYRAMID SIDEBAR MOTION
+   KHEMENU ï¿½ PYRAMID SIDEBAR MOTION
    Subtle forward / backward 3D movement
    ========================================= */
 
@@ -4280,7 +4280,7 @@ body {
 
 
 /* =========================================
-   KHEMENU — MATCHED PYRAMID SIDEBARS
+   KHEMENU ï¿½ MATCHED PYRAMID SIDEBARS
    Same pyramid image left + right
    Synchronized forward/backward motion
    ========================================= */
@@ -4321,7 +4321,7 @@ body {
 
 
 /* =========================================================
-   KHEMENU — COMPACT HOMEPAGE CAROUSEL
+   KHEMENU ï¿½ COMPACT HOMEPAGE CAROUSEL
    Reduce height so surrounding headings remain visible
    ========================================================= */
 
@@ -4376,7 +4376,7 @@ body {
 }
 
 /* =========================================================
-   KHEMENU — EXTRA COMPACT HOMEPAGE CAROUSEL
+   KHEMENU ï¿½ EXTRA COMPACT HOMEPAGE CAROUSEL
    Keep homepage headings visible
    ========================================================= */
 
@@ -4407,7 +4407,7 @@ body {
 }
 
 /* =========================================
-   KHEMENU — COMPACT HOMEPAGE CAROUSEL
+   KHEMENU ï¿½ COMPACT HOMEPAGE CAROUSEL
    Keep section headings fully visible
    ========================================= */
 
@@ -4443,7 +4443,7 @@ body {
 }
 
 /* =========================================================
-   KHEMENU — FINAL CAROUSEL HEADING VISIBILITY FIX
+   KHEMENU ï¿½ FINAL CAROUSEL HEADING VISIBILITY FIX
    Compact, balanced carousel sizing
    Keeps all section headings clearly visible
    ========================================================= */
@@ -4540,7 +4540,7 @@ body {
 
 
 /* =========================================================
-   KHEMENU — FINAL ALL-CAROUSEL SIZE OVERRIDE
+   KHEMENU ï¿½ FINAL ALL-CAROUSEL SIZE OVERRIDE
    Forces every carousel slide to the same compact height
    ========================================================= */
 
@@ -4595,7 +4595,7 @@ body {
 
 
 /* =========================================================
-   KHEMENU — FINAL CAROUSEL LAYOUT
+   KHEMENU ï¿½ FINAL CAROUSEL LAYOUT
    Keep ALL headings visible above the carousel
    ========================================================= */
 
@@ -4686,7 +4686,7 @@ body {
 
 
 /* =========================================================
-   KHEMENU — RESTORE CAROUSEL DOT INDICATORS
+   KHEMENU ï¿½ RESTORE CAROUSEL DOT INDICATORS
    ========================================================= */
 
 .home-carousel {
@@ -4754,3 +4754,130 @@ body {
   }
 }
 
+
+/* =========================================================
+   KHEMENU â€” INSTANT CAROUSEL MEDIA DISPLAY
+   ========================================================= */
+
+.home-carousel .carousel-image {
+  background: #071426;
+  overflow: hidden;
+}
+
+.home-carousel .carousel-image img,
+.home-carousel .carousel-image video {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Do not delay inactive carousel media */
+.home-carousel .carousel-slide {
+  visibility: visible;
+}
+
+.home-carousel .carousel-slide:not(.is-active) .carousel-image img,
+.home-carousel .carousel-slide:not(.is-active) .carousel-image video {
+  opacity: 1 !important;
+}
+
+/* Prevent transitions from hiding media while slides change */
+.home-carousel .carousel-image img,
+.home-carousel .carousel-image video {
+  transition: none !important;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .home-carousel .carousel-image img,
+  .home-carousel .carousel-image video {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+/* =========================================================
+   KHEMENU â€” ELEGANT GOLD NAVIGATION DIVIDER
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .topbar {
+    position: relative;
+    border-bottom: 1px solid rgba(217, 180, 90, 0.28);
+  }
+
+  .topbar::after {
+    content: "";
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: -1px;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(217, 180, 90, 0.18) 12%,
+      rgba(217, 180, 90, 0.65) 50%,
+      rgba(217, 180, 90, 0.18) 88%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    border-bottom: 1px solid rgba(217, 180, 90, 0.22);
+  }
+}
+
+
+@'
+/* =========================================================
+   KHEMENU â€” VISIBLE GOLD NAVIGATION DIVIDER
+   ========================================================= */
+
+.topbar {
+  position: relative !important;
+  z-index: 50 !important;
+}
+
+.main-nav {
+  position: relative !important;
+  z-index: 51 !important;
+  padding-bottom: 12px !important;
+}
+
+.main-nav::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 2% !important;
+  right: 2% !important;
+  bottom: 0 !important;
+  height: 2px !important;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(217, 180, 90, 0.35) 12%,
+    #d9b45a 50%,
+    rgba(217, 180, 90, 0.35) 88%,
+    transparent 100%
+  ) !important;
+  box-shadow: 0 0 8px rgba(217, 180, 90, 0.18) !important;
+  pointer-events: none !important;
+}
+
+@media (max-width: 900px) {
+  .main-nav {
+    padding-bottom: 9px !important;
+  }
+
+  .main-nav::after {
+    left: 4% !important;
+    right: 4% !important;
+    height: 1px !important;
+  }
+}
+'@ | Add-Content .\public\style.css
