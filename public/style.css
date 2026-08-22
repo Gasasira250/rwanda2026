@@ -5066,3 +5066,64 @@ body {
   }
 }
 
+
+/* =========================================================
+   KHEMENU — FINAL PYRAMID SIDEBAR VISIBILITY FIX
+   ========================================================= */
+
+@media (min-width: 901px) {
+  body {
+    position: relative !important;
+    background:
+      url("images/khemenu-pyramid.jpg") center center / cover fixed no-repeat !important;
+    background-color: #071426 !important;
+  }
+
+  body::before,
+  body::after {
+    content: "" !important;
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: clamp(70px, 9vw, 140px) !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(7, 20, 38, 0.15),
+        rgba(7, 20, 38, 0)
+      ),
+      url("images/khemenu-pyramid.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.95 !important;
+    visibility: visible !important;
+  }
+
+  body::before {
+    left: 0 !important;
+    background-position: left center !important;
+  }
+
+  body::after {
+    right: 0 !important;
+    background-position: right center !important;
+    transform: scaleX(-1) !important;
+  }
+
+  .page-shell {
+    position: relative !important;
+    z-index: 2 !important;
+    background: transparent !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body::before,
+  body::after {
+    display: none !important;
+  }
+}
+
