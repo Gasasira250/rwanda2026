@@ -4881,3 +4881,76 @@ body {
   }
 }
 '@ | Add-Content .\public\style.css
+/* =========================================================
+   KHEMENU-REKH — PREMIUM BOOK CLASS SLOT BUTTON
+   ========================================================= */
+
+.header-book-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  order: 3;
+  margin-top: 4px;
+  padding: 10px 22px;
+  border: 1px solid #d9b45a;
+  border-radius: 7px;
+  background: #06243a;
+  color: #f3d98b;
+  font-weight: 700;
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.header-book-button:hover,
+.header-book-button:focus-visible {
+  background: #0a304b;
+  color: #ffe7a3;
+  border-color: #e8c86a;
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.24),
+    0 0 14px rgba(217, 180, 90, 0.28);
+}
+
+.header-book-button:active {
+  transform: translateY(-1px);
+}
+
+
+/* FINAL BOOK CLASS SLOT VISUAL OVERRIDE */
+.title-band .brand-header .header-book-button {
+  background: #06243a !important;
+  color: #f3d98b !important;
+  border: 1px solid #d9b45a !important;
+  border-radius: 7px !important;
+  padding: 10px 22px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18) !important;
+  transition: all 180ms ease !important;
+}
+
+.title-band .brand-header .header-book-button:hover,
+.title-band .brand-header .header-book-button:focus-visible {
+  background: #0a304b !important;
+  color: #ffe7a3 !important;
+  border-color: #e8c86a !important;
+  transform: translateY(-3px) !important;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.24),
+    0 0 16px rgba(217, 180, 90, 0.35) !important;
+}
+
