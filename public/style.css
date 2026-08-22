@@ -5127,3 +5127,52 @@ body {
   }
 }
 
+
+/* =========================================================
+   FINAL PYRAMID VISIBILITY FIX
+   Restore desktop side pyramid artwork only
+   ========================================================= */
+
+@media (min-width: 901px) {
+  body::before,
+  body::after {
+    display: block !important;
+    content: "" !important;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: clamp(55px, 8vw, 125px) !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+    opacity: 0.95 !important;
+    visibility: visible !important;
+    background-image: url("images/khemenu-pyramid.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  body::before {
+    left: 0 !important;
+    right: auto !important;
+    background-position: left center !important;
+  }
+
+  body::after {
+    right: 0 !important;
+    left: auto !important;
+    background-position: right center !important;
+  }
+
+  .page-shell {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body::before,
+  body::after {
+    display: none !important;
+  }
+}
+
