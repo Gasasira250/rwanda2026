@@ -46,13 +46,9 @@
     video.setAttribute("webkit-playsinline", "");
     video.setAttribute("disablepictureinpicture", "");
     video.setAttribute("disableremoteplayback", "");
-    video.setAttribute("preload", "auto");
+    video.setAttribute("preload", "metadata");
 
     video.removeAttribute("controls");
-
-    if (video.paused) {
-      video.load();
-    }
 
     video.addEventListener(
       "loadedmetadata",
@@ -82,8 +78,6 @@
   window.addEventListener("pageshow", () => {
     videos.forEach((video) => attemptPlay(video));
   });
-
-
   /* =========================================================
      HOMEPAGE CAROUSEL
      ========================================================= */
@@ -94,36 +88,39 @@
     return;
   }
 
-  const track = carousel.querySelector(".carousel-track");
   const slides = carousel.querySelectorAll(".carousel-slide");
   const previousButton = carousel.querySelector(".carousel-prev");
   const nextButton = carousel.querySelector(".carousel-next");
   const dotsContainer = carousel.querySelector(".carousel-dots");
 
-  if (!track || slides.length === 0) {
+  if (!slides.length) {
     return;
   }
 
   let currentSlide = 0;
 
-  /* Create navigation dots */
-  slides.forEach((slide, index) => {
-    const dot = document.createElement("button");
+  let dots = [];
 
-    dot.type = "button";
-    dot.className = "carousel-dot";
-    dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+  if (dotsContainer) {
+    dotsContainer.innerHTML = "";
 
-    dot.addEventListener("click", () => {
-      showSlide(index);
+    slides.forEach((_, index) => {
+      const dot = document.createElement("button");
+
+      dot.type = "button";
+      dot.className = "carousel-dot";
+      dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+
+      dot.addEventListener("click", () => {
+        showSlide(index);
+      });
+
+      dotsContainer.appendChild(dot);
     });
 
-    dotsContainer.appendChild(dot);
-  });
+    dots = dotsContainer.querySelectorAll(".carousel-dot");
+  }
 
-  const dots = dotsContainer.querySelectorAll(".carousel-dot");
-
-  /* Show exactly one slide */
   function showSlide(index) {
     if (index < 0) {
       index = slides.length - 1;
@@ -144,6 +141,9 @@
       const video = slide.querySelector("video");
 
       if (video) {
+        video.muted = true;
+        video.defaultMuted = true;
+
         if (active) {
           video.play().catch(() => {});
         } else {
@@ -160,21 +160,18 @@
     });
   }
 
-  /* Previous button */
   if (previousButton) {
     previousButton.addEventListener("click", () => {
       showSlide(currentSlide - 1);
     });
   }
 
-  /* Next button */
   if (nextButton) {
     nextButton.addEventListener("click", () => {
       showSlide(currentSlide + 1);
     });
   }
 
-  /* Keyboard navigation */
   carousel.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") {
       showSlide(currentSlide - 1);
@@ -185,15 +182,12 @@
     }
   });
 
-  /* Start with first slide */
   showSlide(0);
 
-  /* Automatic rotation */
   let carouselTimer = setInterval(() => {
     showSlide(currentSlide + 1);
   }, 7000);
 
-  /* Pause while mouse is over carousel */
   carousel.addEventListener("mouseenter", () => {
     clearInterval(carouselTimer);
   });
@@ -203,9 +197,5 @@
       showSlide(currentSlide + 1);
     }, 7000);
   });
+
 });
-
-
-
-
-
