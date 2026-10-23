@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Consultations | Khemenu-Rekh Institute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="feature-shell">
+      <div class="ambient" aria-hidden="true" id="ambient"></div>
+
+      <header class="feature-topbar">
+        <a class="feature-backlink" href="index.html">home</a>
+        <nav class="social-links" aria-label="quick links">
+          <a class="social-orb" href="contact.html" aria-label="Contact">📩</a>
+          <a class="social-orb" href="classes.html" aria-label="Classes">🗓️</a>
+          <a class="social-orb" href="divination.html" aria-label="Divination">🔎</a>
+          <a class="social-orb" href="counseling.html" aria-label="Counseling">👤</a>
+        </nav>
+      </header>
+
+      <main class="feature-main">
+        <section class="feature-hero">
+          <div class="feature-hero-copy health-hero-copy">
+            <p class="feature-kicker">Health Consultations</p>
+            <h1>Health Consultations</h1>
+            <p class="feature-intro">
+              Book your health consultation today
+            </p>
+            <div class="feature-actions">
+              <a class="feature-button feature-button-primary" href="#weekly-booking">Book Now</a>
+            
+            </div>
+          </div>
+
+          <div class="feature-hero-art">
+            <div class="feature-orbital-ring feature-orbital-ring-one"></div>
+            <div class="feature-orbital-ring feature-orbital-ring-two"></div>
+            <div class="feature-video-frame">
+              <img class="feature-video classes-hero-image" src="images/healthConsultations.jpg" alt="Khemenu-Rekh health consultations" />
+            </div>
+            <div class="feature-sigil-card">
+              <span class="feature-sigil-label">Heal your body</span>
+              <p>Eastern and indigenous medical systems heal and 
+                restore harmony in ways that work with your body, not against it.   </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="feature-flow" aria-label="Classes overview">
+          <article class="feature-note feature-note-wide">
+            <h2>What These Classes Build</h2>
+            <p>
+              Each class is structured to support the gradual awakening of the higher self through applied study,
+              disciplined practice, and methods that can be integrated into daily life.
+            </p>
+          </article>
+
+          <article class="feature-note">
+            <h2>Focus</h2>
+            <p>Self-improvement, spiritual alignment, ritual understanding, and progressive initiatory development.</p>
+          </article>
+
+          <article class="feature-note">
+            <h2>Format</h2>
+            <p>Expect a mix of lectures, workshops, and practical sessions that can serve both new and returning students.</p>
+          </article>
+        </section> -->
+
+      
+
+        <section class="feature-band feature-band-longform" id="weekly-booking" aria-label="Weekly class booking">
+          <div class="feature-band-copy class-booking-copy">
+            <h2>Book Now</h2>
+      
+
+            <div class="class-schedule-grid">
+              <article class="class-schedule-row">
+                <div class="class-schedule-cell">
+                  <span class="class-schedule-label">Service</span>
+                  <p> Health Consultation  </p>
+                </div>
+                <div class="class-schedule-cell">
+                  <span class="class-schedule-label">Location</span>
+                  <p>Flexible</p>
+                </div>
+                <div class="class-schedule-action">
+                  <a class="feature-button feature-button-primary" href="https://www.paypal.com/ncp/payment/GN63URXKN7B9N">Buy Now</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-main">
+          <div class="footer-credit">
+            <img class="footer-credit-logo" src="images/mbLogo.png" alt="MediaBreeze Multimedia logo" />
+            <p class="footer-credit-text">
+              &copy; 2026 web development by <a href="https://www.mediabreeze.com">MediaBreeze Multimedia</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-edge"></div>
+      </footer>
+    </div>
+
+    <script>
+      const ambient = document.getElementById("ambient");
+      const particleCount = 18;
+
+      for (let index = 0; index < particleCount; index += 1) {
+        const dust = document.createElement("span");
+        const size = 3 + Math.random() * 6;
+        const left = Math.random() * 100;
+        const duration = 11 + Math.random() * 12;
+        const delay = Math.random() * -18;
+        const drift = `${-36 + Math.random() * 72}px`;
+
+        dust.className = "dust";
+        dust.style.left = `${left}%`;
+        dust.style.width = `${size}px`;
+        dust.style.height = `${size}px`;
+        dust.style.animationDuration = `${duration}s`;
+        dust.style.animationDelay = `${delay}s`;
+        dust.style.setProperty("--drift-x", drift);
+        ambient.appendChild(dust);
+      }
+    </script>
+    <script src="video-autoplay.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿/* GLOBAL DESIGN & BRANDING UPDATES */
+:root {
+  --primary-blue: #0A192F;
+  --secondary-blue: #1E3A8A;
+  --white-to-blue-bg: linear-gradient(180deg, #FFFFFF 0%, #0A192F 100%);
+  --card-bg: #112240;
+  --text-white: #FFFFFF;
+}
+
+body {
+  background: var(--white-to-blue-bg);
+  background-attachment: fixed;
+  color: var(--text-white);
+}
+
+.light-blue-box,
+.bg-light-blue,
+.saturday-classes-box {
+  display: none !important;
+}

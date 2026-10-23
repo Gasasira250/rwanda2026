@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nu Shu Ra | Khemenu-Rekh Institute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="feature-shell feature-shell-nushu">
+      <div class="ambient" aria-hidden="true" id="ambient"></div>
+
+      <header class="feature-topbar">
+        <a class="feature-backlink" href="index.html">home</a>
+        <nav class="social-links" aria-label="quick links">
+          <a class="social-orb" href="contact.html" aria-label="Contact">📩</a>
+          <a class="social-orb" href="classes.html" aria-label="Classes">🗓️</a>
+          <a class="social-orb" href="health.html" aria-label="Health">⚕️</a>
+          <a class="social-orb" href="divination.html" aria-label="Divination">🔎</a>
+          <a class="social-orb" href="counseling.html" aria-label="Counseling">👤</a>
+        </nav>
+      </header>
+
+      <main class="feature-main">
+        <section class="feature-hero">
+          <div class="feature-hero-copy">
+            <p class="feature-kicker">Embodied Spiritual Technology</p>
+            <h1>Nu Shu Ra</h1>
+            <p class="feature-intro">
+              A ceremonial movement practice shaped around breath, alignment, and energetic refinement.
+              The page stays light on text, so the atmosphere and featured visual do more of the work.
+            </p>
+            <div class="feature-actions">
+              <a class="feature-button feature-button-primary" href="#practice-overview">Explore the Practice</a>
+              <a class="feature-button" href="index.html">Back to Home</a>
+            </div>
+          </div>
+
+          <div class="feature-hero-art">
+            <div class="feature-orbital-ring feature-orbital-ring-one"></div>
+            <div class="feature-orbital-ring feature-orbital-ring-two"></div>
+            <div class="feature-video-frame">
+              <video class="feature-video" autoplay muted loop playsinline preload="auto" poster="exports/nuShuRa1.png">
+                <source src="exports/NuShuRaSync2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="feature-sigil-card">
+              <span class="feature-sigil-label">Temple Motion</span>
+              <p>Quiet kinetic ritual, breath cadence, and blue-lit focus held in a single visual field.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-flow" id="practice-overview" aria-label="Nu Shu Ra overview">
+          <article class="feature-note feature-note-wide">
+            <!-- <span class="feature-note-index">01</span> -->
+            <h2>What It Feels Like</h2>
+            <p>
+              Nu Shu Ra can be framed as a meditative sequence rather than a dense doctrine page. The layout
+              leaves room for a concise introduction, a few evocative statements, and then a clean route into
+              scheduling, booking, or deeper content later.
+            </p>
+          </article>
+
+          <article class="feature-note">
+            <!-- <span class="feature-note-index">02</span> -->
+            <h2>Core Emphasis</h2>
+            <p>Breath, rooted posture, fluid transitions, and spiritual concentration presented with restraint.</p>
+          </article>
+
+          <article class="feature-note">
+            <!-- <span class="feature-note-index">03</span> -->
+            <h2>Ideal Use</h2>
+            <p>Use this space for a short invitation, a few lines of context, and one clear next action.</p>
+          </article>
+        </section>
+
+        <section class="feature-band" aria-label="Feature highlights">
+          <div class="feature-band-media"></div>
+          <div class="feature-band-copy">
+            <h2>Philosophy of Nu Shu Ra</h2>
+        
+            <section>
+
+              Short content that goes in the section. 
+
+                 
+                </section>
+            
+          </div>
+        </section>
+      </main>
+
+     <footer>
+      <div class="footer-main">
+        <div class="footer-credit">
+          <img class="footer-credit-logo" src="images/mbLogo.png" alt="MediaBreeze Multimedia logo" />
+          <p class="footer-credit-text">
+            &copy; 2026 web development by <a href="https://www.mediabreeze.com">MediaBreeze Multimedia</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-edge"></div>
+    </footer>
+    </div>
+
+    <script>
+      const ambient = document.getElementById("ambient");
+      const particleCount = 18;
+
+      for (let index = 0; index < particleCount; index += 1) {
+        const dust = document.createElement("span");
+        const size = 3 + Math.random() * 6;
+        const left = Math.random() * 100;
+        const duration = 11 + Math.random() * 12;
+        const delay = Math.random() * -18;
+        const drift = `${-36 + Math.random() * 72}px`;
+
+        dust.className = "dust";
+        dust.style.left = `${left}%`;
+        dust.style.width = `${size}px`;
+        dust.style.height = `${size}px`;
+        dust.style.animationDuration = `${duration}s`;
+        dust.style.animationDelay = `${delay}s`;
+        dust.style.setProperty("--drift-x", drift);
+        ambient.appendChild(dust);
+      }
+    </script>
+    <script src="video-autoplay.js"></script>
+</body>
+</html>
