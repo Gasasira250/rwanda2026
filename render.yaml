@@ -1,0 +1,29 @@
+# One public Node service plus managed PostgreSQL. Free plans are for short demos:
+# the API sleeps when idle and the database expires after 30 days. Upgrade before using real data.
+services:
+  - type: web
+    name: yodeals-app
+    runtime: node
+    rootDir: .
+    plan: free
+    buildCommand: cd backend && npm ci --include=dev && npm run db:generate
+    startCommand: cd backend && npm run start:deploy
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: yodeals-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_ORIGIN
+        value: http://localhost:5500,http://127.0.0.1:5500,http://localhost:5501,http://127.0.0.1:5501
+
+databases:
+  - name: yodeals-db
+    databaseName: yodeals
+    user: yodeals
+    plan: free
+    postgresMajorVersion: "17"

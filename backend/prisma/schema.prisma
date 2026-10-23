@@ -1,0 +1,151 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model audit_events {
+  id            BigInt   @id @default(autoincrement())
+  actor_user_id String?  @db.Uuid
+  event_type    String
+  entity_type   String?
+  entity_id     String?
+  metadata      Json     @default("{}")
+  created_at    DateTime @default(now()) @db.Timestamptz(6)
+  users         users?   @relation(fields: [actor_user_id], references: [id], onUpdate: NoAction)
+}
+
+model categories {
+  id         String  @id
+  name       String
+  subtitle   String?
+  icon       String?
+  sort_order Int     @default(0)
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model financing_requests {
+  id                String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  order_id          String   @db.Uuid
+  school_id         String   @db.Uuid
+  requested_lender  String?
+  deposit_percent   Decimal  @db.Decimal(5, 2)
+  repayment_unit    String
+  repayment_count   Int
+  status            String   @default("pending_review")
+  terms_version     String   @default("unapproved-demo-terms")
+  submitted_details Json     @default("{}")
+  created_at        DateTime @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime @default(now()) @db.Timestamptz(6)
+  orders            orders   @relation(fields: [order_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  schools           schools  @relation(fields: [school_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model orders {
+  id                 String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  order_number       BigInt               @unique @default(autoincrement())
+  school_id          String               @db.Uuid
+  created_by         String               @db.Uuid
+  status             String               @default("submitted")
+  currency           String               @default("RWF") @db.Char(3)
+  total_rwf          Decimal              @db.Decimal(14, 2)
+  payment_method     String
+  order_mode         String
+  delivery_details   Json                 @default("{}")
+  lines              Json                 @default("[]")
+  frontend_order_id  String?
+  created_at         DateTime             @default(now()) @db.Timestamptz(6)
+  updated_at         DateTime             @default(now()) @db.Timestamptz(6)
+  financing_requests financing_requests[]
+  users              users                @relation(fields: [created_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  schools            schools              @relation(fields: [school_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([school_id, created_at(sort: Desc)], map: "orders_school_created_idx")
+}
+
+model packages {
+  sku       String  @id
+  name      String
+  size      String?
+  level     String?
+  icon      String?
+  image_key String?
+  items     Json    @default("[]")
+  active    Boolean @default(true)
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model pricing_tiers {
+  min_qty  Int     @id
+  discount Decimal @db.Decimal(5, 4)
+  label    String
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model products {
+  id             String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  sku            String?  @unique
+  name           String
+  category       String
+  description    String?
+  unit_price_rwf Decimal  @db.Decimal(14, 2)
+  active         Boolean  @default(true)
+  created_at     DateTime @default(now()) @db.Timestamptz(6)
+  brand          String?
+  stock_status   String   @default("in")
+  lead_time      String?
+  financeable    Boolean  @default(true)
+  best_seller    Boolean  @default(false)
+  hidden         Boolean  @default(false)
+  icon           String?
+  image_keys     Json     @default("[]")
+  specs          Json     @default("{}")
+  options        Json?
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model schools {
+  id                 String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  school_name        String
+  country            String               @default("RW") @db.Char(2)
+  school_type        String?
+  district           String?
+  learner_count      Int?
+  tin                String?
+  head_teacher       String
+  contact_name       String
+  contact_role       String?
+  phone              String
+  email              String
+  bank_preference    String?
+  shule_plus         Boolean              @default(false)
+  created_at         DateTime             @default(now()) @db.Timestamptz(6)
+  updated_at         DateTime             @default(now()) @db.Timestamptz(6)
+  financing_requests financing_requests[]
+  orders             orders[]
+  users              users[]
+}
+
+model settings {
+  key   String @id
+  value String
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model users {
+  id            String         @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  school_id     String         @db.Uuid
+  email         String         @unique
+  password_hash String
+  role          String         @default("school_admin")
+  created_at    DateTime       @default(now()) @db.Timestamptz(6)
+  audit_events  audit_events[]
+  orders        orders[]
+  schools       schools        @relation(fields: [school_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([school_id])
+}

@@ -1,0 +1,18 @@
+# Environment secrets
+.env
+**/.env
+!.env.example
+
+# Dependencies and generated Prisma client
+**/node_modules/
+backend/src/generated/prisma/
+
+# Local and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+*.bak
+backend/src/server.old.js
+backend/src/server.pre-update.js
+backend/src/server.js.backup
