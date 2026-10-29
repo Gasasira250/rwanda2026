@@ -1,4 +1,4 @@
-# yoDeals backend
+# Shulemart backend
 
 The frontend in `frontend/index.html` talks to an Express API. The API uses Prisma ORM with PostgreSQL for persistent data.
 

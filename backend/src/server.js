@@ -229,7 +229,7 @@ async function priceLines(db, lines, requireFinanceable = false) {
 
 /* ------------------------------------------------------------------ routes */
 
-app.get('/', (_req, res) => res.json({ service: 'yoDeals API', health: '/api/health' }));
+app.get('/', (_req, res) => res.json({ service: 'Shulemart API', health: '/api/health' }));
 
 app.get('/api/health', async (_req, res) => {
   try {
@@ -505,7 +505,7 @@ app.use((err, _req, res, _next) => {
 const port = Number(process.env.PORT || 4000);
 console.log(`CORS allows frontend origins: ${allowedOrigins.join(', ')}`);
 app
-  .listen(port, '0.0.0.0', () => console.log(`yoDeals API listening on http://localhost:${port}`))
+  .listen(port, '0.0.0.0', () => console.log(`Shulemart API listening on http://localhost:${port}`))
   .on('error', (e) => {
     if (e.code === 'EADDRINUSE') {
       console.error(`Port ${port} is already in use. Another copy of the server is probably running: close it, or change PORT in .env.`);
